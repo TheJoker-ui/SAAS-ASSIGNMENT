@@ -46,7 +46,7 @@ app.put('/user/:email', (req, res) => {
 
     // Check if user exists
     if (!users[email]) {
-        return res.status(404).json({ message: 'User not found' });
+        return res.status(404).json({ message: 'User not registed' });
     }
 
     // Update age if provided
